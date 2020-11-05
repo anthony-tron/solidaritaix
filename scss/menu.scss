@@ -1,5 +1,5 @@
 .main-nav {
-    > ul {
+    >ul {
         margin: auto;
         background-color: brown;
         max-width: 1400px;
@@ -7,40 +7,33 @@
         display: flex;
         flex-direction: row;
         list-style-type: none;
-
-        > li {
+        >li {
             display: flex;
             flex: 1;
-
             a {
                 display: flex;
                 flex: 1;
                 justify-content: center;
                 padding: 12px 0;
                 align-items: center;
-                background-color: #D65858;
+                background-color: $red-color;
                 color: white;
                 text-decoration: none;
-
                 &:hover {
-                    background-color: #b94545;
+                    background-color: $dark-red-color;
                 }
             }
         }
     }
 }
 
-
 .search-container {
     form.search-form {
         display: flex;
         flex-direction: row;
-    
         input[type="search"] {
             background-color: blueviolet;
             padding-left: 1em;
         }
     }
 }
-
-
