@@ -31,9 +31,16 @@
     form.search-form {
         display: flex;
         flex-direction: row;
+        flex: 1;
+
         input[type="search"] {
             background-color: $blanc-casse;
             padding-left: 1em;
+            flex: 1;
+        }
+        button[type="submit"] {
+            background-color: $red-color;
+            border-radius: 0px;
         }
     }
 }
