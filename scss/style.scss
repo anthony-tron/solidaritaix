@@ -7,7 +7,6 @@
 @import "./img.scss";
 @import "./menu.scss";
 @import "./news.scss";
-
 * {
     /* reset everything */
     margin: 0;
@@ -101,7 +100,7 @@ td {
 }
 
 button {
-    background-color: $blanc-casse;
+    background-color: $grey-color;
     border: none;
     color: #000000;
     padding: 5px 12px;
@@ -128,7 +127,7 @@ input[type="submit"] {
     padding: 0.5em;
     /* un sur deux */
     &:nth-child(odd) {
-        background: $blanc-casse;
+        background: $grey-color;
     }
 }
 
@@ -153,7 +152,7 @@ nav.main-buttons {
                 justify-content: center;
                 align-items: center;
                 padding: 2em 1em;
-                background-color: $blanc-casse;
+                background-color: $grey-color;
                 border-radius: 8px;
                 text-align: center;
                 width: 100%;
@@ -172,7 +171,7 @@ ul.aides-etat {
         >div {
             margin: 0.5em;
             padding: 0.75em;
-            background-color: $blanc-casse;
+            background-color: $grey-color;
             border-radius: 4px;
             min-height: 90px;
         }
