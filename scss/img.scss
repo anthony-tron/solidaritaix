@@ -10,6 +10,16 @@ img.avion {
     margin-right: 5px;
 }
 
+.lieu.details {
+    img.logo {
+        width: 200px;
+        height: 200px;
+        max-height: 24vh;
+        max-width: 24vh;
+    }
+}
+
+
 .lieu.item .logo-container {
     width: 128px;
     height: 128px;
