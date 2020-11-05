@@ -1,0 +1,40 @@
+iframe.google-map {
+    /* si height non saisie,
+    l'iframe peut avoir une taille dynamique,
+    très très ennuyant pour le visiteur */
+    width: 100%;
+    height: 100%;
+}
+
+.map-holder {
+    height: 300px;
+    width: 100%;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+}
+
+#gmap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 350px;
+    margin-bottom: 1em;
+    border-radius: 4px;
+    background-color: #e5e3df;
+
+    animation: gmap-fade 300ms;
+
+    > .chargement {
+        color: #feeeee;
+    }
+}
+
+@keyframes gmap-fade {
+    from {
+        background-color: #ffffff;
+    }
+    to {
+        background-color: #e5e3df;;
+    }
+}

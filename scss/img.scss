@@ -1,0 +1,28 @@
+img.logo {
+    max-width: 42px;
+    max-height: 42px;
+    margin-right: 16px;
+}
+
+img.avion {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+.lieu.item .logo-container {
+    width: 128px;
+    height: 128px;
+    margin: 4px;
+    margin-right: 12px;
+}
+
+.logo-container img, .logo-inexistant {
+    width: 100%;
+    height: 100%;
+}
+
+.logo-container .logo-inexistant {
+    background-color: #bbb;
+    border-radius: 4px;
+}

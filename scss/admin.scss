@@ -1,0 +1,23 @@
+table.apercu-donnees {
+    table-layout: fixed;
+    width: 100%;
+    word-break: break-word;
+
+    td:empty {
+        background: #d86417;
+    }
+}
+
+.error {
+    background-color: #eebbaa;
+}
+
+.success {
+    background-color: #ddeedd;
+}
+
+.feedback {
+    padding: 5px 12px;
+    border-radius: 5px;
+    background-color: #eef;
+}

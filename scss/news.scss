@@ -1,0 +1,81 @@
+form.news {
+    input[type="text"], input[type="submit"], textarea {
+        display: block;
+        width: 100%;
+        border: 1px solid black;
+        border-radius: 3px;
+    }
+
+    button[type="submit"]{
+        background-color: #0074e8;
+        color: white;
+        border: none;
+        width: 100%;
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 10px;
+
+        &:hover {
+            background-color: #0262c2;
+        }
+    }
+
+    .h1, .h2, .h3, .h4, .h5, .h6, .p {
+        font-family: sans-serif;
+    }
+}
+
+a.button-annuler{
+    background-color: #cfdbda;
+    padding: 1px 12px;
+    flex: 1;
+}
+
+a.button-save{
+    background-color: #35771f;
+    color: white;
+    padding: 1px 12px;
+    flex: 1;
+}
+
+button#remove-button{
+    background-color:#c42121;
+    color: rgb(255,255,255);
+}
+
+a.button-annuler:hover {
+    background-color: #b5c5c3;
+}
+
+
+a.button-save:hover {
+    background-color: #285e16;
+}
+
+div.div-bouton{
+    display: flex;
+    border-radius: 4px;
+    overflow: hidden;
+    text-align: center;
+}
+
+div.div-bouton > a {
+    text-decoration: none;
+}
+
+ul.latest-news {
+    list-style: none;
+
+    > li {
+        > a {
+            background-color: #f3f3f5;
+            display: block;
+            padding: 1em;
+            border-radius: 8px;
+            margin: 0.25em;
+            min-height: 240px;
+        }
+    }
+}
