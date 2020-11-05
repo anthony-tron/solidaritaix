@@ -1,5 +1,6 @@
 li.categorie-item {
-    background-color: #cfdbda; /* Green */
+    background-color: #cfdbda;
+    /* Green */
     border: none;
     /*! padding: 5px 12px; */
     text-align: center;
@@ -9,31 +10,26 @@ li.categorie-item {
     border-radius: 4px;
     cursor: pointer;
     margin-left: 10px;
-
     a {
-        color:#fff;
+        color: white;
         padding: 8px 14px;
         display: block;
-
         &:hover {
             text-decoration: none;
         }
     }
-
-    &.categorie-2{
+    &.categorie-2 {
         background-color: red;
         &:hover {
-            background-color: rgb(194, 2, 2); 
+            background-color: rgb(194, 2, 2);
         }
     }
-
     &.categorie-3 {
         background-color: rgb(59, 167, 255);
         &:hover {
             background-color: rgb(49, 133, 202);
         }
     }
-
     &.categorie-4 {
         background-color: rgb(97, 180, 13);
         &:hover {

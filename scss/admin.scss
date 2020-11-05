@@ -2,14 +2,13 @@ table.apercu-donnees {
     table-layout: fixed;
     width: 100%;
     word-break: break-word;
-
     td:empty {
-        background: #d86417;
+        background: $orange-color;
     }
 }
 
 .error {
-    background-color: #eebbaa;
+    background-color: $orange-clair-color;
 }
 
 .success {

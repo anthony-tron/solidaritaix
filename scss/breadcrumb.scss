@@ -1,24 +1,20 @@
 nav.breadcrumb {
     * {
-        color: cornflowerblue;
+        color: $bleu-clair;
     }
-
-    > ul {
-        > li {
+    >ul {
+        >li {
             list-style: none;
             display: inline-flex;
             font-size: 0.95em;
-    
             &.current {
-                > a {
+                >a {
                     font-weight: bold;
                 }
-    
                 &::after {
                     display: none;
                 }
             }
-
             &::after {
                 content: '>';
                 margin: 0 0.3em;
@@ -26,4 +22,3 @@ nav.breadcrumb {
         }
     }
 }
-

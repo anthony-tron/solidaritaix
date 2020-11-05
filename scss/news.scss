@@ -1,13 +1,14 @@
 form.news {
-    input[type="text"], input[type="submit"], textarea {
+    input[type="text"],
+    input[type="submit"],
+    textarea {
         display: block;
         width: 100%;
         border: 1px solid black;
         border-radius: 3px;
     }
-
-    button[type="submit"]{
-        background-color: #0074e8;
+    button[type="submit"] {
+        background-color: $blue-color;
         color: white;
         border: none;
         width: 100%;
@@ -16,61 +17,63 @@ form.news {
         justify-content: center;
         align-items: center;
         margin-bottom: 10px;
-
         &:hover {
-            background-color: #0262c2;
+            background-color: $dark-blue-color;
         }
     }
-
-    .h1, .h2, .h3, .h4, .h5, .h6, .p {
+    .h1,
+    .h2,
+    .h3,
+    .h4,
+    .h5,
+    .h6,
+    .p {
         font-family: sans-serif;
     }
 }
 
-a.button-annuler{
-    background-color: #cfdbda;
+a.button-annuler {
+    background-color: $grey-color;
     padding: 1px 12px;
     flex: 1;
 }
 
-a.button-save{
-    background-color: #35771f;
+a.button-annuler:hover {
+    background-color: $dark-grey-color;
+}
+
+a.button-save {
+    background-color: $green-color;
     color: white;
     padding: 1px 12px;
     flex: 1;
 }
 
-button#remove-button{
-    background-color:#c42121;
-    color: rgb(255,255,255);
-}
-
-a.button-annuler:hover {
-    background-color: #b5c5c3;
-}
-
-
 a.button-save:hover {
-    background-color: #285e16;
+    background-color: $dark-green-color;
 }
 
-div.div-bouton{
+button#remove-button {
+    background-color: $true-red-color;
+    color: rgb(255, 255, 255);
+}
+
+div.div-bouton {
     display: flex;
     border-radius: 4px;
     overflow: hidden;
     text-align: center;
 }
 
-div.div-bouton > a {
+div.div-bouton>a {
     text-decoration: none;
 }
 
 ul.latest-news {
     list-style: none;
-
-    > li {
-        > a {
-            background-color: #f3f3f5;
+    >li {
+        >a {
+            background-color: $blanc-casse;
             display: block;
             padding: 1em;
             border-radius: 8px;
