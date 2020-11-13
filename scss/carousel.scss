@@ -1,22 +1,74 @@
 /* picker pour le carousel */
 
-#picker {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    >button {
-        background-color: white;
-        border: 1px solid black;
-        border-radius: 100%;
-        width: 10px;
-        height: 10px;
-        padding: 0;
-        margin: 0;
-        margin-left: 2px;
-        margin-right: 2px;
-        padding: 2px;
-        &:hover {
-            background-color: grey;
+.carousel {
+    position: relative;
+
+    > ul {
+        display: flex;
+        position: relative;
+        height: 300px;
+        overflow: hidden;
+    
+        > li {
+            flex-shrink: 0;
+            width: 100%;
+            position: absolute;
+            transition: left 300ms;
+        }
+    }
+
+    .picker {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    
+        > button {
+            border: none;
+            background: none;
+            padding: 4px;
+    
+            &.focused div, &:hover div {
+                background-color: black;
+            }
+    
+            > div {
+                background-color: white;
+                border: 1px solid black;
+                border-radius: 100%;
+                width: 10px;
+                height: 10px;
+                padding: 0;
+                margin: 0;
+                margin-left: 2px;
+                margin-right: 2px;
+            }
+        }
+    }
+
+    nav.button-holder {
+        pointer-events: none;
+        position: absolute;
+        top: 0;
+        display: flex;
+        flex: 1;
+        width: 100%;
+        height: 100%;
+        justify-content: space-between;
+        align-items: center;
+
+        .arrow {
+            pointer-events: all;
+            background: transparent;
+
+            img {
+                width: 24px;
+                height: 24px;
+            }
+    
+            &.left img {
+                transform: rotate(180deg);
+            }
         }
     }
 }
+

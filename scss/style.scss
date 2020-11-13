@@ -1,4 +1,5 @@
 @import "./variable.scss";
+@import "./font.scss";
 @import "./admin.scss";
 @import "./breadcrumb.scss";
 @import "./carousel.scss";
@@ -7,6 +8,7 @@
 @import "./img.scss";
 @import "./menu.scss";
 @import "./news.scss";
+
 * {
     /* reset everything */
     margin: 0;
@@ -22,7 +24,8 @@ body {
     background-color: $blanc-rose;
     display: flex;
     flex-direction: column;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: "klavika", sans-serif;
+    font-weight: normal;
     font-size: calc(12px + 0.4vw);
     line-height: 1.4;
     color: #454545;
@@ -35,36 +38,44 @@ main {
     margin: auto;
     padding-top: 0.75em;
     margin-bottom: 1em;
-    >section {
-        padding: 1em 0;
+
+    > section {
+        padding: 1em 0.5em;
     }
-    >header {
-        text-align: center;
-        margin: 0.75em 0;
-        >h1 {
-            margin-bottom: 0.25em;
-        }
-        >h2 {
-            font-weight: normal;
-        }
-        >p {
-            font-size: 1.1em;
-            margin: 0.5em 0;
-        }
+}
+
+body > header {
+    background-color: $nuance-grey;
+    text-align: center;
+    padding: 1em 0;
+
+    > h1 {
+        margin-bottom: 0.25em;
     }
+    > h2 {
+        font-weight: normal;
+    }
+    > p {
+        font-size: 1.1em;
+        margin: 0.5em 0;
+    }
+}
+
+h1, .h1, h2, .h2, h3, .h3 {
+    font-family: "anson", sans-serif;
 }
 
 h1,
 .h1 {
-    font-weight: bold;
-    font-size: 1.5em;
+    font-weight: normal;
+    font-size: 2em;
     color: #111;
 }
 
 h2,
 .h2 {
-    font-weight: bold;
-    font-size: 1.25em;
+    font-weight: normal;
+    font-size: 1.5em;
     color: #222;
     margin-bottom: 0.25em;
 }
@@ -72,12 +83,12 @@ h2,
 h3,
 .h3 {
     font-weight: bold;
-    font-size: 1.125em;
+    font-size: 1.25em;
     color: #333;
 }
 
 a {
-    color: $bleu-clair;
+    color: $red-color;
     text-decoration: none;
 }
 
@@ -178,5 +189,32 @@ ul.aides-etat {
         &.important {
             flex-basis: 100%;
         }
+    }
+}
+
+ul.aides-etat-liste {
+    list-style: none;
+
+    > li {
+        padding: 0.75em;
+        &:nth-child(odd) {
+            background: $grey-color;
+        }
+    }
+}
+
+.zone-recherche-lieux {
+    display: flex;
+    flex-direction: row;
+
+    img {
+        background-color: $red-color;
+        padding: 0.75em;
+    }
+
+    input {
+        background-color: #f2f2f2;
+        padding: 0.75em;
+        flex: 1;
     }
 }

@@ -1,39 +1,51 @@
 li.categorie-item {
     background-color: #cfdbda;
-    /* Green */
     border: none;
-    /*! padding: 5px 12px; */
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
     border-radius: 4px;
     cursor: pointer;
-    margin-left: 10px;
+    margin-right: 8px;
+    margin-bottom: 2px;
+
     a {
-        color: white;
-        padding: 8px 14px;
+        color: #222;
+        padding: 4px 8px;
         display: block;
-        &:hover {
-            text-decoration: none;
+        text-decoration: none;
+        font-size: 110%;
+    }
+    
+    .icon {
+        height: 16px;
+        width: 16px;
+        display: inline-block;
+        background-size: contain;
+        margin-top: 4px;
+    }
+
+    &.categorie-1 {
+        background-color: #92a6f1;
+        .icon {
+
         }
     }
     &.categorie-2 {
-        background-color: red;
-        &:hover {
-            background-color: rgb(194, 2, 2);
-        }
+        background-color: #dd8d91;
     }
     &.categorie-3 {
-        background-color: rgb(59, 167, 255);
-        &:hover {
-            background-color: rgb(49, 133, 202);
+        background-color: #F4C095;
+        .icon {
+            background-image: url("/ptut/img/carrot.svg");
         }
     }
     &.categorie-4 {
-        background-color: rgb(97, 180, 13);
-        &:hover {
-            background-color: rgb(77, 139, 14);
-        }
+        background-color: #91c4b9;
+    }
+
+    &:hover {
+        opacity: 0.8;
     }
 }

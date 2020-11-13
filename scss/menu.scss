@@ -1,7 +1,12 @@
 .main-nav {
+    font-family: "klavika";
+    font-weight: normal;
+    font-size: 1.3em;
+    
+    background-color: $red-color;
+
     >ul {
         margin: auto;
-        background-color: brown;
         max-width: 1400px;
         width: 100%;
         display: flex;
