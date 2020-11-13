@@ -65,26 +65,43 @@ div.div-bouton {
     text-align: center;
 }
 
-div.div-bouton>a {
+div.div-bouton > a {
     text-decoration: none;
 }
 
 ul.latest-news {
     list-style: none;
-    >li {
-        >a {
+
+    > li {
+        height: 100%;
+        > a {
+            height: 100%;
+            overflow: hidden;
             background-color: $grey-color;
             display: block;
-            padding: 1em;
             border-radius: 8px;
-            margin: 0.25em;
-            min-height: 240px;
+            text-decoration: none;
+
+            &:hover {
+                opacity: 0.95;
+            }
+
+            header {
+                padding: 0.5em 1em;
+                background-color: $red-color;
+                h3 {
+                    color: #fafafa;
+                    font-size: 1.5em;
+                }
+                p {
+                    color: #eeeeee;
+                }
+            }
         }
     }
 }
 
 article.news {
-
     > h2, h3 {
         margin-top: 0.5em;
     }
