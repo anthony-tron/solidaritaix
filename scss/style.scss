@@ -140,6 +140,12 @@ input[type="submit"] {
     &:nth-child(odd) {
         background: $grey-color;
     }
+
+    h3 {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
 }
 
 .jour {
@@ -216,5 +222,19 @@ ul.aides-etat-liste {
         background-color: #f2f2f2;
         padding: 0.75em;
         flex: 1;
+    }
+}
+
+button.epingler {
+    background-image: url("img/bookmark.svg");
+    width: 16px;
+    height: 16px;
+    padding: 0;
+    margin-left: 4px;
+
+    &:hover {
+        width: 16px;
+        height: 16px;
+        background-image: url("img/bookmark.fill.svg");
     }
 }
