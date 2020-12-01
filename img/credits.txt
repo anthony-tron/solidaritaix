@@ -1,0 +1,7 @@
+avion.svg : ?
+bookmark.svg : Google
+carrot.svg : Freepik
+logo.svg : ?
+loupe.svg : ?
+helping-hands.svg : Freepik
+right-arrow.svg : Dave Gandy
