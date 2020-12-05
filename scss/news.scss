@@ -8,7 +8,7 @@ form.news {
         border-radius: 3px;
     }
     button[type="submit"] {
-        background-color: $blue-color;
+        background-color: $boutonBleu;
         color: white;
         border: none;
         width: 100%;
@@ -18,7 +18,7 @@ form.news {
         align-items: center;
         margin-bottom: 10px;
         &:hover {
-            background-color: $dark-blue-color;
+            background-color: $darkBoutonBleu;
         }
     }
     .h1,
@@ -33,28 +33,28 @@ form.news {
 }
 
 a.button-annuler {
-    background-color: $grey-color;
+    background-color: $fondBlock;
     padding: 1px 12px;
     flex: 1;
 }
 
 a.button-annuler:hover {
-    background-color: $dark-grey-color;
+    background-color: $darkBoutonGris;
 }
 
 a.button-save {
-    background-color: $green-color;
+    background-color: $boutonVert;
     color: white;
     padding: 1px 12px;
     flex: 1;
 }
 
 a.button-save:hover {
-    background-color: $dark-green-color;
+    background-color: $darkBoutonVert;
 }
 
 button#remove-button {
-    background-color: $true-red-color;
+    background-color: $boutonRouge;
     color: rgb(255, 255, 255);
 }
 
@@ -65,30 +65,27 @@ div.div-bouton {
     text-align: center;
 }
 
-div.div-bouton > a {
+div.div-bouton>a {
     text-decoration: none;
 }
 
 ul.latest-news {
     list-style: none;
-
-    > li {
+    >li {
         height: 100%;
-        > a {
+        >a {
             height: 100%;
             overflow: hidden;
-            background-color: $grey-color;
+            background-color: $fondBlock;
             display: block;
             border-radius: 8px;
             text-decoration: none;
-
             &:hover {
                 opacity: 0.95;
             }
-
             header {
                 padding: 0.5em 1em;
-                background-color: $red-color;
+                background-color: $rougeTheme;
                 h3 {
                     color: #fafafa;
                     font-size: 1.5em;
@@ -102,7 +99,8 @@ ul.latest-news {
 }
 
 article.news {
-    > h2, h3 {
+    >h2,
+    h3 {
         margin-top: 0.5em;
     }
 }

@@ -8,7 +8,6 @@
 @import "./img.scss";
 @import "./menu.scss";
 @import "./news.scss";
-
 * {
     /* reset everything */
     margin: 0;
@@ -21,7 +20,6 @@
 }
 
 body {
-    background-color: $blanc-rose;
     display: flex;
     flex-direction: column;
     font-family: "klavika", sans-serif;
@@ -29,7 +27,7 @@ body {
     font-size: calc(12px + 0.4vw);
     line-height: 1.4;
     color: #454545;
-    background-color: $blanc-casse;
+    background-color: $couleurFond;
 }
 
 main {
@@ -38,30 +36,33 @@ main {
     margin: auto;
     padding-top: 0.75em;
     margin-bottom: 1em;
-
-    > section {
+    >section {
         padding: 1em 0.5em;
     }
 }
 
-body > header {
-    background-color: $nuance-grey;
+body>header {
+    background-color: $fondBlock;
     text-align: center;
     padding: 1em 0;
-
-    > h1 {
+    >h1 {
         margin-bottom: 0.25em;
     }
-    > h2 {
+    >h2 {
         font-weight: normal;
     }
-    > p {
+    >p {
         font-size: 1.1em;
         margin: 0.5em 0;
     }
 }
 
-h1, .h1, h2, .h2, h3, .h3 {
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3 {
     font-family: "anson", sans-serif;
 }
 
@@ -88,7 +89,7 @@ h3,
 }
 
 a {
-    color: $red-color;
+    color: $rougeTheme;
     text-decoration: none;
 }
 
@@ -111,7 +112,7 @@ td {
 }
 
 button {
-    background-color: $grey-color;
+    background-color: $fondBlock;
     border: none;
     color: #000000;
     padding: 5px 12px;
@@ -138,9 +139,8 @@ input[type="submit"] {
     padding: 0.5em;
     /* un sur deux */
     &:nth-child(odd) {
-        background: $grey-color;
+        background: $fondBlock;
     }
-
     h3 {
         display: flex;
         flex-direction: row;
@@ -169,7 +169,7 @@ nav.main-buttons {
                 justify-content: center;
                 align-items: center;
                 padding: 2em 1em;
-                background-color: $grey-color;
+                background-color: $fondBlock;
                 border-radius: 8px;
                 text-align: center;
                 width: 100%;
@@ -188,7 +188,7 @@ ul.aides-etat {
         >div {
             margin: 0.5em;
             padding: 0.75em;
-            background-color: $grey-color;
+            background-color: $fondBlock;
             border-radius: 4px;
             min-height: 90px;
         }
@@ -200,11 +200,10 @@ ul.aides-etat {
 
 ul.aides-etat-liste {
     list-style: none;
-
-    > li {
+    >li {
         padding: 0.75em;
         &:nth-child(odd) {
-            background: $grey-color;
+            background: $fondBlock;
         }
     }
 }
@@ -212,12 +211,10 @@ ul.aides-etat-liste {
 .zone-recherche-lieux {
     display: flex;
     flex-direction: row;
-
     img {
-        background-color: $red-color;
+        background-color: $rougeTheme;
         padding: 0.75em;
     }
-
     input {
         background-color: #f2f2f2;
         padding: 0.75em;
@@ -231,7 +228,6 @@ button.epingler {
     height: 16px;
     padding: 0;
     margin-left: 4px;
-
     &:hover {
         width: 16px;
         height: 16px;

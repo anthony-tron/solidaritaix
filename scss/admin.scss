@@ -3,12 +3,12 @@ table.apercu-donnees {
     width: 100%;
     word-break: break-word;
     td:empty {
-        background: $orange-color;
+        background: $blockOrange;
     }
 }
 
 .error {
-    background-color: $orange-clair-color;
+    background-color: $blockOrangeClair;
 }
 
 .success {

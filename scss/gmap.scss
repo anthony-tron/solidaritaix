@@ -9,7 +9,7 @@ iframe.google-map {
 .map-holder {
     height: 300px;
     width: 100%;
-    background-color: $blanc-casse;
+    background-color: $couleurFond;
     border-radius: 5px;
 }
 
@@ -20,10 +20,10 @@ iframe.google-map {
     height: 350px;
     margin-bottom: 1em;
     border-radius: 4px;
-    background-color: $blanc-casse;
+    background-color: $couleurFond;
     animation: gmap-fade 300ms;
     >.chargement {
-        color: $blanc-rose;
+        color: $couleurFond;
     }
 }
 
@@ -32,7 +32,7 @@ iframe.google-map {
         background-color: white;
     }
     to {
-        background-color: $blanc-casse;
+        background-color: $couleurFond;
         ;
     }
 }

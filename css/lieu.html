@@ -1,0 +1,197 @@
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="lieu.css" />
+    <title>Site de la gratuité</title>
+</head>
+
+<body>
+    <nav class="main-nav">
+        <ul>
+            <li>
+                <a class="no-padding" href="/ptut/"><img src="img/logo.svg" alt="" class="logo">Solidaritaix</a>
+            </li>
+            <li><a href="/ptut/aidesEtat.php">Aides de l'état</a></li>
+            <li><a href="/ptut/assos.php">Aides associatives</a></li>
+            <li class="search-container">
+                <form action="search.php" method="GET" class="search-form">
+                    <input type="search" name="search-content" id="search-content" placeholder="Rechercher..." />
+                    <button type="submit"><img class="icon" src="/ptut/img/loupe.svg" alt="Rechercher"></button>
+                    <!-- <input type="submit" value="Rechercher" id="search-submit-button"/> -->
+                </form>
+            </li>
+        </ul>
+    </nav>
+
+
+    <header>
+        <h1>Les Restaurants du Coeur</h1>
+        <nav class="breadcrumb">
+            <ul>
+                <li><a href="/ptut">Solidaritaix</a></li>
+                <li><a href="/ptut/assos.php">Aides associatives</a></li>
+                <li class="current"><a href="#">Les Restaurants du Coeur</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <div class="lieu details">
+            <ul class="inline-list">
+                <li>
+                    <img class="logo" src="https://www.restosducoeur.org/wp-content/uploads/2016/04/logo.svg" alt="Illustration" />
+                </li>
+
+                <li>
+                    <ul>
+                        <li class="categorie-item categorie-3">
+                            <a href="categorie.php?id=3">Aide alimentaire</a>
+                        </li>
+                        <li class="categorie-item categorie-2">
+                            <a href="categorie.php?id=2">Aide financière</a>
+                        </li>
+                        <li class="categorie-item categorie-4">
+                            <a href="categorie.php?id=4">Logement</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+
+            <div>
+                <h3>Adresse</h3>
+                <address>9 rue Léon Jouhaux 13100 Aix-en-Provence</address>
+
+                <address class="distance-from" data-latitude=43.5215601 data-longitude=5.4287144>À ... m de ...</address>
+
+                <address class="map-holder">
+                        <iframe class="google-map"
+                                width="600"
+                                height="300"
+                                frameborder="0" style="border:0"
+                                src="https://www.google.com/maps/embed/v1/place?q=9+rue+L%C3%A9on+Jouhaux+13100+Aix-en-Provence&key=AIzaSyCS3ffoUMLHWZCmmhxNEcX-exGTioJmjXI" allowfullscreen></iframe>
+                    </address>
+            </div>
+
+            <div>
+                <h3>Contact</h3>
+                <div class="info">
+                    <h4>Par courrier électronique</h4>
+                    <address>ad13.aix02@restosducoeur.org</address>
+                    <address>restosaixcezanne@gmail.com</address>
+                </div>
+                <div class="info">
+                    <h4>Par téléphone</h4>
+                    <address>09 82 43 31 36</address>
+                </div>
+            </div>
+
+            <div class="info">
+                <h3>Horaires</h3>
+
+                <div class="jour">
+                    <h4>Jeudi</h4>
+                    <ul class="unstyled-list">
+                        <li>09:00 - 12:00</li>
+                        <li>13:30 - 16:30</li>
+                    </ul>
+                </div>
+                <div class="jour">
+                    <h4>Vendredi</h4>
+                    <ul class="unstyled-list">
+                        <li>09:00 - 12:00</li>
+                        <li>13:30 - 16:30</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="info">
+                <h3>Sites web</h3>
+
+
+                <a class="jour" target="_blank" href="https://www.restosducoeur.org">https://www.restosducoeur.org</a>
+            </div>
+        </div>
+
+        <aside>
+            <h2>Voir aussi</h2>
+
+            <div>
+                <h3><address>A moins de 1 km de ce lieu</address></h3>
+
+                <ul>
+                    <li class="lieu item">
+                        <div class="logo-container">
+                            <img loading="lazy" src="https://www.secours-catholique.org/sites/scinternet/files/logo_0_0.png" alt="" />
+                        </div>
+
+                        <div>
+                            <h3>
+                                Secours Catholique<button class="epingler"></button>
+                            </h3>
+
+                            <ul class="inline-list">
+                                <li class="categorie-item categorie-3">
+                                    <a href="categorie.php?id=3">
+                                        <span class="icon"></span> Aide alimentaire </a>
+                                </li>
+                                <li class="categorie-item categorie-2">
+                                    <a href="categorie.php?id=2">
+                                        <span class="icon"></span> Aide financière </a>
+                                </li>
+                                <li class="categorie-item categorie-4">
+                                    <a href="categorie.php?id=4">
+                                        <span class="icon"></span> Logement </a>
+                                </li>
+                            </ul>
+
+                            <address class="distance-from" data-latitude=43.5235575 data-longitude=5.4345977>À ... m de ...</address>
+                            <address>2 boulevard du Maréchal-Leclerc 13090 Aix-en-Provence</address>
+                            <a href="lieu.php?id=3">En savoir plus</a>
+                        </div>
+                    </li>
+                    <li class="lieu item">
+                        <div class="logo-container">
+                            <div class="logo-inexistant">
+                                <div>Image indisponible</div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <h3>
+                                Secours Populaire<button class="epingler"></button>
+                            </h3>
+
+                            <ul class="inline-list">
+                                <li class="categorie-item categorie-3">
+                                    <a href="categorie.php?id=3">
+                                        <span class="icon"></span> Aide alimentaire </a>
+                                </li>
+                                <li class="categorie-item categorie-1">
+                                    <a href="categorie.php?id=1">
+                                        <span class="icon"></span> Aide vestimentaire </a>
+                                </li>
+                                <li class="categorie-item categorie-4">
+                                    <a href="categorie.php?id=4">
+                                        <span class="icon"></span> Logement </a>
+                                </li>
+                            </ul>
+
+                            <address class="distance-from" data-latitude=43.5215123 data-longitude=5.4290531>À ... m de ...</address>
+                            <address>30 boulevard du docteur Schweitzer, bâtiment Le Méjane, 13090 Aix-en-Provence</address>
+                            <a href="lieu.php?id=5">En savoir plus</a>
+                        </div>
+                    </li>
+                    <ul>
+            </div>
+        </aside>
+
+    </main>
+
+
+    <script src="js/distance.js"></script>
+</body>
+
+</html>

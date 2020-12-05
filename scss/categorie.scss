@@ -9,7 +9,6 @@ li.categorie-item {
     cursor: pointer;
     margin-right: 8px;
     margin-bottom: 2px;
-
     a {
         color: #222;
         padding: 4px 8px;
@@ -17,7 +16,6 @@ li.categorie-item {
         text-decoration: none;
         font-size: 110%;
     }
-    
     .icon {
         height: 16px;
         width: 16px;
@@ -25,12 +23,9 @@ li.categorie-item {
         background-size: contain;
         margin-top: 4px;
     }
-
     &.categorie-1 {
         background-color: #92a6f1;
-        .icon {
-
-        }
+        .icon {}
     }
     &.categorie-2 {
         background-color: #dd8d91;
@@ -44,7 +39,6 @@ li.categorie-item {
     &.categorie-4 {
         background-color: #91c4b9;
     }
-
     &:hover {
         opacity: 0.8;
     }
