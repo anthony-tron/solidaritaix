@@ -186,6 +186,18 @@ li.categorie-item.categorie-4 {
     background-color: #91c4b9
 }
 
+li.categorie-item.categorie-7 {
+    background-color: #ab86fd
+}
+
+li.categorie-item.categorie-8 {
+    background-color: #ac7f57
+}
+
+li.categorie-item.categorie-9 {
+    background-color: #7bd0ea
+}
+
 li.categorie-item:hover {
     opacity: 0.8
 }
