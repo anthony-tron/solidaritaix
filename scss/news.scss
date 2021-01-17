@@ -74,12 +74,13 @@ ul.latest-news {
     >li {
         height: 100%;
         >a {
-            height: 100%;
+            height: 99%;
             overflow: hidden;
             background-color: $fondBlock;
             display: block;
             border-radius: 8px;
             text-decoration: none;
+            border: $border;
             &:hover {
                 opacity: 0.95;
             }

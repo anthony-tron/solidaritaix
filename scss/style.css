@@ -419,12 +419,13 @@ ul.latest-news>li {
 }
 
 ul.latest-news>li>a {
-    height: 100%;
+    height: 99%;
     overflow: hidden;
     background-color: #f0efef;
     display: block;
     border-radius: 8px;
-    text-decoration: none
+    text-decoration: none;
+    border: solid 1px grey;
 }
 
 ul.latest-news>li>a:hover {
@@ -486,7 +487,8 @@ main>section {
 body>header {
     background-color: #f0efef;
     text-align: center;
-    padding: 1em 0
+    padding: 1em 0;
+    border: solid 1px grey
 }
 
 body>header>h1 {
@@ -621,7 +623,8 @@ nav.main-buttons>ul>li>a {
     background-color: #f0efef;
     border-radius: 8px;
     text-align: center;
-    width: 100%
+    width: 100%;
+    border: solid 1px grey
 }
 
 ul.aides-etat {
